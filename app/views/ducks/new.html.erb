@@ -1,0 +1,19 @@
+<h1>Duck Form</h1>
+
+<%= form_for(@duck) do |f| %>
+    <p>
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+    </p>
+    <p>
+        <%= f.label :description %>
+        <%= f.text_area :description %>
+    </p>
+    <p>
+        <%= f.label :student_id %>
+        <%= f.number_field :student_id %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
